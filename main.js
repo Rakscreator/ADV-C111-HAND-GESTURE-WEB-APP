@@ -58,3 +58,8 @@ function gotresult(error,results){
         }
     }
 }
+function speak(){
+    synth = window.speechSynthesis
+    speakdata = "You are trying to say "+results[0].label;
+    synth.speak(speakdata)
+}
